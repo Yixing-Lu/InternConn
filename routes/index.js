@@ -1,12 +1,19 @@
 var express = require("express")
 var router = express.Router();
-
+var Campground = require("../models/campground");
 var passport = require("passport")
 var User = require("../models/user")
 
 // root route
 router.get("/",function(req,res){
-	res.render("landing");
+	// get all campgrounds from DB
+	Campground.find({},function(err,allCampgrounds){
+		if (err) {
+			console.log(err)
+		} else {
+			res.render("landing", {campgrounds:allCampgrounds});
+		}
+	})
 })
 
 // show register form
