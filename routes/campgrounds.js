@@ -46,7 +46,7 @@ router.get("/new",middleware.isLoggedIn,function(req,res){
 // Show: show more info about the campground
 router.get("/:id",function(req,res){
 	// find the campground with ID
-	Campground.findById(req.params.id).populate("comments").exec(function(err, foundCampground){
+	Campground.findById(req.params.id,function(err, foundCampground){
 		if (err) {
 			console.log(err);
 		} else {
