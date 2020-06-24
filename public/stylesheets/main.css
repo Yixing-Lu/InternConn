@@ -13,3 +13,8 @@
 #delete-form {
 	display: inline;
 }
+
+footer {
+  text-align: center;
+  padding: 3px;
+}
