@@ -1,11 +1,16 @@
 var mongoose = require("mongoose");
 
 var projectSchema = new mongoose.Schema({
-	companyName: String,
-	companyLogo: String,
-	companyDescription: String,
-	jobTitle: String,
-	jobDescription: String
+	name: String,
+	img: String,
+	description: String,
+	author: {
+			id: {
+				type: mongoose.Schema.Types.ObjectId,
+				ref: "User"
+			},
+			username: String
+	}
 });
 
 module.exports = mongoose.model("Project", projectSchema);

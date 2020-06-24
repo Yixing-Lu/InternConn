@@ -1,19 +1,12 @@
 var express = require("express")
 var router = express.Router();
-var Campground = require("../models/campground");
+var Project = require("../models/project");
 var passport = require("passport")
 var User = require("../models/user")
 
 // root route
 router.get("/",function(req,res){
-	// get all campgrounds from DB
-	Campground.find({},function(err,allCampgrounds){
-		if (err) {
-			console.log(err)
-		} else {
-			res.render("landing", {campgrounds:allCampgrounds});
-		}
-	})
+	res.render("landing");
 })
 
 // show register form
@@ -29,8 +22,8 @@ router.post("/register",function(req,res){
 			return res.render("register", {"error":err.message})
 		}
 		passport.authenticate("local")(req,res,function(){
-			req.flash("success","Welcome to InternConn" + user.username)
-			res.redirect("/campgrounds")
+			req.flash("success","Welcome to InternConn " + user.username)
+			res.redirect("/projects")
 		})
 	})
 })
@@ -42,7 +35,7 @@ router.get("/login",function(req,res){
 
 // handling login logic
 router.post("/login", passport.authenticate("local", {
-	successRedirect: "/campgrounds",
+	successRedirect: "/projects",
 	failureRedirect: "/login"
 	}),function(req,res){
 	
@@ -52,7 +45,7 @@ router.post("/login", passport.authenticate("local", {
 router.get("/logout",function(req,res){
 	req.logout();
 	req.flash("success","Logged you out!")
-	res.redirect("/campgrounds")
+	res.redirect("/projects")
 })
 
 

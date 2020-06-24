@@ -1,14 +1,14 @@
-var Campground = require("../models/campground")
+var Project = require("../models/project")
 
 // all the middlware goes here
 var middlewareObj = {}
 
-middlewareObj.checkCampGroundOwnership = function(req,res,next){
+middlewareObj.checkProjectOwnership = function(req,res,next){
 	// is user logged in
 	if (req.isAuthenticated()) {
-		Campground.findById(req.params.id,function(err, foundCampground){
+		Project.findById(req.params.id,function(err, foundCampground){
 			if (err) {
-				req.flash("error","Campground not found");
+				req.flash("error","Project not found");
 				res.redirect("back")
 			} else {
 				// does user own the camp?

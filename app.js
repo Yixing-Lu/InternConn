@@ -2,7 +2,6 @@ var express 		= require("express"),
 	app 			= express(),
 	bodyParser 		= require("body-parser"),
 	mongoose 		= require("mongoose"),
-	Campground = require("./models/campground"),
 	Project = require("./models/project"),
 	User = require("./models/user"),
 	seedDB = require("./seeds"),
@@ -12,7 +11,7 @@ var express 		= require("express"),
 	flash = require("connect-flash")
 
 // requring routes 
-var campgroundRoutes = require("./routes/campgrounds")
+var projectRoutes = require("./routes/projects")
 	indexRoutes = require("./routes/index")
 
 
@@ -52,7 +51,7 @@ app.use(function(req,res,next){
 
 // express router
 app.use("/",indexRoutes)
-app.use("/campgrounds",campgroundRoutes) // add /campgrounds before all routes
+app.use("/projects",projectRoutes) // add /projects before all routes
 
 app.listen(3000, function(){
 	console.log("Server has started!");

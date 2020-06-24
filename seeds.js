@@ -1,5 +1,5 @@
 var mongoose = require("mongoose");
-var Campground = require("./models/campground");
+var Project = require("./models/project");
 
 var data = [
  	{
@@ -20,19 +20,19 @@ var data = [
 ]
 
 function seedDB() {
-	// Remove all campgrounds
-	Campground.remove({},function(err){
+	// Remove all projects
+	Project.remove({},function(err){
 		if (err){
 			console.log(err)
 		}
-		console.log("remove campgrounds")
-		// add a few campgrounds
+		console.log("remove projects")
+		// add a few projects
 		data.forEach(function(seed){
-			Campground.create(seed, function(err, campground){
+			Project.create(seed, function(err, project){
 				if (err) {
 					console.log(err)
 				} else {
-					console.log("add a campground")
+					console.log("add a project")
 				}
 			})
 		})
