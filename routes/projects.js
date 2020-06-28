@@ -9,7 +9,8 @@ router.get("/",function(req,res){
 		if (err) {
 			console.log(err)
 		} else {
-			res.render("projects/index", {projects:allProjects});
+			res.render("../views/landing", {projects:allProjects});
+			// res.render("projects/index", {projects:allProjects});
 		}
 	})
 });
@@ -26,7 +27,7 @@ router.post("/", middleware.isLoggedIn,function(req,res){
 	var companyUrl = req.body.companyUrl
 	var jobTitle = req.body.jobTitle
 	var jobRequriement = req.body.jobRequriement
-	
+
 	var newProject = {
 		name:name, 
 		img:image, 

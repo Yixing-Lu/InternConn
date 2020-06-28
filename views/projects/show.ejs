@@ -1,5 +1,8 @@
 <%- include("../partials/header") %>
 	
+
+
+
 <div class="container">
 	<div class="row">
 		<!-- <div class="col-md-3">
@@ -14,14 +17,12 @@
 			<div class="thumbnail">
 				<img class="img-responsive" src="<%= project.img %>">
 				<div class="caption-full">
-					<h4><a><%= project.name %></a></h4>	
+					<h4><a href="https://<%= project.companyUrl %>"><%= project.name %></a></h4>	
 					<p>Description: <%= project.description %></p>
 					<p>URL: <%= project.companyUrl %></p>
 					<p>Title: <%= project.jobTitle %></p>
-					<p>Requriement: <%= project.jobRequriement %></p>
-<!-- 					<p>
-						<em>Submitted By <%= project.author.username %></em>
-					</p> -->
+					<p>Requriement <%= project.jobRequriement %></p>
+					<!-- <p><em>Submitted By <%= project.author.username %></em></p> -->
 					<% if(currentUser && project.author.id.equals(currentUser._id)) { %>
 						<a class="btn btn-xs btn-warning" href="/projects/<%= project._id %>/edit">Edit</a>
 						<form id="delete-form" action="/projects/<%= project._id %>?_method=DELETE" method="POST">

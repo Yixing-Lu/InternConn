@@ -3,10 +3,11 @@
 	<head>
 		<title>InternConn</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-- Bootstrap core CSS -->
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
 	</head>
 	<body>
-	
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
 			<div class="navbar-header">
@@ -18,10 +19,11 @@
 					<% if(!currentUser) { %>
 						<li><a href="/">Home</a></li>
 						<li><a href="/about">About</a></li>
-						<li><a href="/projects">Projects</a></li>
+						<li><a href="#projects">Projects</a></li>
 						<li><a href="https://forms.gle/5LUNai9ZBgHxe9yt9">Apply Now</a></li>
-						<!-- <li><a href="/login">Login</a></li>
-						<li><a href="/register">Sign Up</a></li> -->
+						<li><a href="#contact">Contact</a></li>
+						<!-- <li><a href="/login">Login</a></li> -->
+						<!-- <li><a href="/register">Sign Up</a></li> -->
 					<% } else { %>
 						<li><a href="#">Signed In As <%= currentUser.username %></a></li>
 						<li><a href="/logout">Logout</a></li>

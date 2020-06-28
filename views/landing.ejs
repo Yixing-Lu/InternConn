@@ -1,63 +1,74 @@
 <%- include("partials/header") %>
-<div class="container">
-	<header class="jumbotron">
-		<div class="container">
-			<h1>Welcome to InternConn!</h1>
-			<p>Intern the COVID-19 way</p>
-		</div>
-	</header>
+<header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1>Welcome to InternConn!</h1>
+      <p class="lead">Intern the COVID-19 way</p>
+    </div>
+</header>
 
-	<div>
-		<h1>WHAT WE DO</h1>
-		<h3>
-			<p>
-			As the COVID-19 pandemic has severely disrupted the economy and University research programs, thousands of college students, including us, lost amazing opportunities.
-			</p>
-			<p>
-			We want to help out our fellow students by creating this platform InternConn to connect impacted students with ongoing, remote research or internship opportunities.
-			</p>	
-		</h3>
-	</div>
+<section id="whatwedo" name="whatwedo">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2>WHAT WE DO</h2>
+        <p class="lead">As the COVID-19 pandemic has severely disrupted the economy and University research programs, thousands of college students, including us, lost amazing opportunities.</p>
+        <p class="lead">We want to help out our fellow students by creating this platform InternConn to connect impacted students with ongoing, remote research or internship opportunities.</p>
+        <a class="btn btn-primary" href="/about" role="button">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-	<hr>
+<section id="howitworks" class="bg-light" name="howitworks">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2>HOW IT WORKS</h2>
+        <p class="lead"><strong>For students</strong>: As a student, we expect you to form up in a team of 3-4 people and voluntarily work on valuable projects and research opportunities to gain intern experience.</p>
+        <p class="lead"><strong>For companies</strong>: As a project sponsor, we hope you can participate in weekly check-in with the team working for the project and provide mentorships and advice.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-	<div>
-		<h1>HOW IT WORKS</h1>
-		<h3>
-			<p>
-			For students:
-			<br>
-			As a student, we expect you to form up in a team of 3-4 people and voluntarily work on valuable projects and research opportunities to gain intern experience.
-			</p>
-			<br>
-			<p>
-			For companies:
-			<br>
-			As a project sponsor, we hope you can participate in weekly check-in with the team working for the project and provide mentorships and advice.
-			</p>	
-		</h3>
-	</div>
+<section id="projects" name="projects">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2>Projects</h2>
+        <div class="container">
+        	<div class="row text-center" style="display:flex; flex-wrap:wrap;">
+        		<% projects.forEach(function(project){ %>
+        			<div class="col-md-3 col-sm-6">
+        				<div class="thumbnail">
+        					<div class="caption">
+        						<h4><%= project.name %></h4>
+        						<h5><%= project.jobTitle %></h4>
+        					</div>
+        					<p>
+        						<a href="/projects/<%= project._id %>" class="btn btn-primary">More Info</a>
+        					</p>
+        				</div>
+        			</div>
+        		<% }) %>
+        	</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-	<hr>
+<section id="contact" class="bg-light" name="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h2>Contact Us</h2>
+        <p class="lead"><strong>For Students</strong>: If you want to <em>participate</em> in the internship projects, please submit your application <a href="https://forms.gle/5LUNai9ZBgHxe9yt9">here</a>!</p>
+        <p class="lead"><strong>For Companies</strong>: If you are interested in <em>providing</em> a valuable summer internship project as a project provider, please contact us! </p>
+        <em>Email</em>: <a href="mailto:internconn.contact@gmail.com">internconn.contact@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-	<div>
-		<h1>WHAT WE DO</h1>
-		<h3>
-			<p>
-			As the COVID-19 pandemic has severely disrupted the economy and University research programs, thousands of college students, including us, lost amazing opportunities.
-			</p>
-			<p>
-			We want to help out our fellow students by creating this platform InternConn to connect impacted students with ongoing, remote research or internship opportunities.
-			</p>	
-		</h3>
-	</div>
-
-	<hr>
-	
-	<div>
-		<h1>Projects</h1>
-		<a href="/projects" class="btn btn-lg btn-success">View All Projects</a>
-	</div>
-
-</div>
 <%- include("partials/footer") %>

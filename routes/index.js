@@ -6,8 +6,16 @@ var User = require("../models/user")
 
 // root route
 router.get("/",function(req,res){
-	res.render("landing");
+	// get all projects from DB
+	Project.find({},function(err,allProjects){
+		if (err) {
+			console.log(err)
+		} else {
+			res.render("landing", {projects:allProjects});
+		}
+	})
 })
+
 
 // root route
 router.get("/about",function(req,res){
