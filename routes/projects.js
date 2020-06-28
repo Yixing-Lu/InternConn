@@ -23,7 +23,19 @@ router.post("/", middleware.isLoggedIn,function(req,res){
 		id: req.user._id,
 		username: req.user.username
 	}
-	var newProject = {name:name, img:image, description:dsc, author:author};
+	var companyUrl = req.body.companyUrl
+	var jobTitle = req.body.jobTitle
+	var jobRequriement = req.body.jobRequriement
+	
+	var newProject = {
+		name:name, 
+		img:image, 
+		description:dsc, 
+		author:author,
+		companyUrl: companyUrl,
+		jobTitle: jobTitle,
+		jobRequriement: jobRequriement
+	};
 	// create a new project and save to DB
 	Project.create(newProject, function(err, newCreatProject){
 		if (err) {

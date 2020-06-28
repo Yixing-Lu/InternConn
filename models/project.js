@@ -10,7 +10,10 @@ var projectSchema = new mongoose.Schema({
 				ref: "User"
 			},
 			username: String
-	}
+	},
+	companyUrl: String,
+	jobTitle: String,
+	jobRequriement: String
 });
 
 module.exports = mongoose.model("Project", projectSchema);
