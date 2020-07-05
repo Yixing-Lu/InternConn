@@ -1,0 +1,147 @@
+<%- include("./partials/header") %>
+
+
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+/* body{ margin:0px } */
+/* div#top{ background:url(topSliver.png) repeat-x; height:73px; font-size:36px; text-align: center; padding:20px 0px 0px 20px;  } */
+
+div#projects{ min-width:900px; padding: 0px}
+div#projects > div#margin{ float:left; width:100%; }
+div#projects > div#margin > div#border{ border:white 0px solid; padding: 40px; margin-left:0;
+    margin-right:auto; }
+
+div#middle1{ min-width:900px; padding: 20px }
+div#middle1 > div#margin{ float:left; width:50%; }
+div#middle1 > div#margin > div#border{ border:white 0px solid; padding: 40px; margin-left:200px;
+    margin-right:0px; }
+div#middle1 > div#margin > div#border > img{ width:100%; }
+
+
+/* div#bottom{ clear:left; background:#666; height:200px; } */
+
+
+.txt {
+	text-indent: 20px;
+	font-family:Times New Roman,Times,serif;
+	font-size:20px;
+	/* margin-top: 0em;
+	margin-bottom: 0em;
+	margin-left: auto;
+	margin-right: auto; */
+}
+
+
+.fixed-bg {
+background-image: url("/imgs/makeaconnection.jpg");
+min-height: 450px;
+background-attachment: fixed;
+background-position: right top;
+/* background-position: 500px -60px; */
+background-repeat: no-repeat;
+background-size: cover;
+background-size: 50%;
+
+}
+
+
+
+
+</style>
+
+
+<div id="middle1">
+<!-- start rezscore -->
+	<div id="margin">
+		<div id="border">
+
+      <!-- <div style = "width: 450px;">
+        <img src="/imgs/rezscore.png" style = "width: 450px;" alt="example">
+      </div> -->
+      <img src="/imgs/rezscore.png" style = "width: 200px;" alt="example">
+
+		<!-- <div class="fixed-bg"></div> -->
+		</div>
+	</div>
+
+	<div id="margin">
+		<div id = "border">
+		<div style = "width: 300px; margin-left:-10em; margin-bottom:10em;">
+			<div class="txt" style = "text-align:center; text-align:center;margin-top:1em;margin-bottom:1em;">
+				REZSCORE
+			</div>
+
+			<div class="txt" style = "text-align:center; margin-bottom:1em;margin-right:0.5em;margin-left:1em;">
+        <a href="www.rezscore.com">
+            <p>www.rezscore.com</p>
+        </a>
+			</div>
+
+		</div>
+
+		</div>
+	</div>
+ <!-- end rezscore -->
+
+
+
+</div>
+
+
+<div id="projects">
+	<div id="margin" style = "background:#f6f7f5;">
+		<div id = "border">
+			<div class="txt" style = "font-size: 30px; text-align: center;">
+					<p class = "txt" style ="font-size: 30px">
+            1. COMPANY / SKILLS / JOB TITLE RECOMMENDATIONS
+          </p>
+          <br>
+          <p class = "txt" style ="font-size: 25px">
+            As we onboard users to our lead gen network, it is important to provide them the optimal point of entry to our lead gen network.
+            As we onboard users, we need to create an algorithm to accomplish the following:
+          </p>
+          <br>
+          <p class = "txt" style ="font-size: 30px">
+            Outline:
+          </p>
+          <p class = "txt" style ="font-size: 25px">
+            Recommend companies/skills/job titles based on their resume
+            In the absence of a resume, select default values.
+            Weight these toward where our network is notably strong or weak.
+            Evaluate and improve the performance of this algorithm.
+          </p>
+          <br>
+          <p class = "txt" style ="font-size: 30px">
+            Goal:
+          </p>
+          <p class = "txt" style ="font-size: 25px">
+            Improve Activation Rate 10%
+          </p>
+
+			</div>
+			<!-- <div style="text-align: center; margin-top: 2em">
+				<a href="#">
+					<button class="w3-button w3-white w3-border w3-border-black w3-round-xxlarge" style = "font-size: 20px;">Apply Now</button>
+				</a>
+			</div>
+       -->
+		</div>
+
+	</div>
+
+</div>
+
+
+
+
+
+
+<br>
+<br>
+
+
+
+<%- include("./partials/footer") %>

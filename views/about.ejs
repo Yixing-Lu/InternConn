@@ -1,23 +1,148 @@
 <%- include("./partials/header") %>
-<div class="container">
-	<header class="jumbotron">
-		<div class="container">
-			<h1>About Us</h1>
+
+
+<style>
+	div#projects{ min-width:900px; padding: 100px}
+	div#projects > div#margin{ float:center; width:100%; }
+	div#projects > div#margin > div#border{ border:white 0px solid; padding: 40px;}
+	div#projects > div#margin > div#border> img{ width:100%; }
+
+	imgTxt
+	{
+	position: absolute; /* To place the text on the image*/
+	top: 100px; /* The exact location of the text from the top of the image*/
+	left: 300px; /* Other beautification stuff */
+	color: black;
+	width: 100%;
+	font-size:50px;
+
+	}
+
+	.txt {
+		text-indent: 20px;
+		font-family:Times New Roman,Times,serif;
+		font-size:20px;
+		/* margin-top: 0em;
+		margin-bottom: 0em;
+		margin-left: auto;
+		margin-right: auto; */
+	}
+
+	imgTxt {
+		margin: 0em;
+ 		padding: 0em;
+ 		background: #f1f1f1;
+ 		/* font-family: 'Berkshire Swash', cursive; */
+	}
+
+		.containers{
+	  width: 100%;
+	  height: 100%;
+	  position: relative;
+	  margin: 0px auto;
+	}
+	.containers img{
+	  width: 100%;
+	  height: 100%;
+	}
+	.text{
+	  color: white;
+	  font-size: 50px;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%,-50%);
+	  text-shadow: 0 0 10px black;
+	}
+
+
+
+
+
+</style>
+
+<div id="projects">
+	<div id="margin">
+		<div id="border">
+
+			<div>
+					<div class="containers">
+						<!-- <img style = "filter: brightness(50%); height: 100%; width: 100%; object-fit: contain" src="/imgs/aboutUS.jpg" alt=""> -->
+						<img style = "filter: brightness(50%);" src="/imgs/aboutUS.jpg" alt="">
+						<div class="text">
+    				About US
+  				</div>
+					</div>
+
+				<!-- <div class="txt" style = "object-fit: contain;position: absolute; top:50%; left:50%; color: black; font-size = 4vw">
+						Our STORY
+				</div> -->
+			</div>
+
+			<!-- <span style= "margin-top: 4em;
+				margin-bottom: -15em;
+				margin-left: 0em;
+				margin-right: 0em;">
+ 			OUR STORY
+			</span> -->
+			<!-- <img src="/imgs/aboutUS.jpg" alt=""> -->
+			<!-- <imgTxt> OUR STORY </imgTxt> -->
+
+		<div style = "margin-top: 5em;
+			margin-bottom: -10em;
+			margin-left: 0em;
+			margin-right: 0em;">
+
+			<!-- <p style = "font-family:Times New Roman,Times,serif;font-size:32px;font-style:normal;
+
+			text-align:center ">
+						 Behind the Scenes
+			</p> -->
+
+			<div class="txt" style = "text-align: center; font-size: 30px">
+				Behind the Scenes
+			</div>
+
+		<div style = " margin-top: 2em;
+			margin-bottom: 5em;
+			margin-left: 5em;
+			margin-right: 5em;">
+
+			<div class="txt">
+
+				As the COVID-19 pandemic has severely disrupted the economy and University research programs,
+				thousands of college students, including us, lost amazing opportunities.
+			</div>
+			<br>
+			<div class="txt">
+				Despite the challenges and uncertainties in the future months, we want to help out our fellow students
+				by creating InternConn,
+				a platform to connect impacted students with ongoing, remote research or internship opportunities.
+			</div>
+			<br>
+			<div class="txt">
+				I would like to invite you to be a part of the initiative by sharing opportunities with students with canceled internships! Whether or not the company is able to provide financial accommodation in lieu of the opportunities is not our priority. These opportunities can be unofficial and last varying durations. We especially encourage you to challenge students in non-traditional ways and we are willing to work out individualized opportunity programs for each organization.
+			</div>
 		</div>
-	</header>
 
-	<h1>Behind the Scenes</h1>
 
-	<h3>
-	As the COVID-19 pandemic has severely disrupted the economy and University research programs, thousands of college students, including us, lost amazing opportunities.
-	</h3>
 
-	<h3>
-	Despite the challenges and uncertainties in the future months, we want to help out our fellow students by creating InternConn, a platform to connect impacted students with ongoing, remote research or internship opportunities. Our goal is to connect industry expertise in the professional fields with innovative ideas among college students in a way that’s crucial in the face of an unprecedented crisis.
-	</h3>
 
-	<h3>
-	I would like to invite you to be a part of the initiative by sharing opportunities with students with canceled internships! Whether or not the company is able to provide financial accommodation in lieu of the opportunities is not our priority. These opportunities can be unofficial and last varying durations. We especially encourage you to challenge students in non-traditional ways and we are willing to work out individualized opportunity programs for each organization.
-	</h3>
+		</div>
+
+
+
+
+			<!-- <div class="txt" style = "font-size: 30px; text-align: center">
+					OPPORTUNITIES
+			</div> -->
+
+		</div>
+
+	</div>
+
 </div>
+
+
+
 <%- include("./partials/footer") %>
