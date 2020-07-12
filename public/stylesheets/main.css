@@ -26,3 +26,29 @@ footer {
   text-align: center;
   padding: 3px;
 }
+
+.sectionTitle {
+	font-family: 'Baloo Da 2', cursive;
+	
+}
+
+.companyName {
+	font-family: 'Baloo Da 2', cursive;
+}
+
+
+p {
+	font-family: 'Montserrat', cursive;
+}
+
+nav {
+	font-family: 'Baloo Da 2', cursive;
+	font-size: 1.5em;
+}
+
+.navbar-header a {
+	font-family: 'Baloo Da 2', cursive;
+	font-size: 1.2em;
+}
+
+
