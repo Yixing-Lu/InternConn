@@ -127,18 +127,18 @@ background-size: 50%;
 
 </div>
 
-<div id="projects">
+
+<div id="projects" name="projects">
 	<div id=“margin”>
 		<div id="border">
 			<div class="txt" style = "font-size: 30px; text-align: center">
 					OPPORTUNITIES
 			</div>
-			<div style="text-align: center; margin-top: 2em">
+			<!-- <div style="text-align: center; margin-top: 2em">
 				<a href="#">
 					<button class="w3-button w3-white w3-border w3-border-black w3-round-xxlarge" style = "font-size: 20px;">Apply Now</button>
 				</a>
-
-			</div>
+			</div> -->
 		</div>
 
 	</div>
@@ -149,112 +149,40 @@ background-size: 50%;
 </style>
 
 <div id="middle1">
-<!-- start rezscore -->
-	<div id="margin">
-		<div id="border">
-		<img src="/imgs/rezscore.png" alt="example">
+	<% projects.forEach(function(project){ %>
+		<div id="margin">
+			<div id="border">
+			<img src="<%= project.img %>" alt="example">
 
-		<!-- <div class="fixed-bg"></div> -->
-		</div>
-	</div>
-
-	<div id="margin">
-		<div id="border">
-
-		<div style = "width: 300px; margin-left:-10em; margin-bottom:10em;">
-			<div class="txt" style = "text-align:center; text-align:center;margin-bottom:1em;">
-				REZSCORE
-			</div>
-
-			<div class="txt" style = "text-align:center; margin-bottom:1em;margin-right:0.5em;margin-left:1em;">
-				<p>Exceptional Achievement</p>
-				<p>
-					10 Projects for You to Choose
-				</p>
-			</div>
-			<!-- margin-top: 0;margin-bottom: 0em;margin-left: 7em; margin-right: 0em; -->
-			<div style = "margin-top: 0;margin-bottom: 0em;margin-left: 7em; margin-right: 0em;">
-				<a href="#">
-					<button class="w3-button w3-white w3-border w3-border-black w3-round-xxlarge" style = "font-size: 14px">Read More</button>
-				</a>
+			<!-- <div class="fixed-bg"></div> -->
 			</div>
 		</div>
+		<div id="margin">
+			<div id="border">
 
-		</div>
-	</div>
- <!-- end rezscore -->
+			<div style = "width: 300px; margin-left:-10em; margin-bottom:10em;">
+				<div class="txt" style = "text-align:center; text-align:center;margin-bottom:1em;">
+					<%= project.name %>
+				</div>
 
-<!-- start power of you -->
-<div id="margin">
-	<div id="border">
-	<img src="/imgs/poy_logo_1200.png" alt="example">
+				<div class="txt" style = "text-align:center; margin-bottom:1em;margin-right:0.5em;margin-left:1em;">
+					<p>
+						<%= project.jobTitle %>
+					</p>
+				</div>
+				<!-- margin-top: 0;margin-bottom: 0em;margin-left: 7em; margin-right: 0em; -->
+				<div style = "margin-top: 0;margin-bottom: 0em;margin-left: 7em; margin-right: 0em;">
+					<a href="/projects/<%= project._id %>">
+						<button class="w3-button w3-white w3-border w3-border-black w3-round-xxlarge" style = "font-size: 14px">Read More</button>
+					</a>
+				</div>
+			</div>
 
-	<!-- <div class="fixed-bg"></div> -->
-	</div>
-</div>
-
-<div id="margin">
-	<div id="border">
-
-	<div style = "width: 300px; margin-left:-10em; margin-bottom:10em;">
-		<div class="txt" style = "text-align:center;margin-bottom:1em;">
-			POWR OF YOU
-		</div>
-
-		<div class="txt" style = "text-align:center;margin-bottom:1em;margin-right:0.5em;margin-left:1em;">
-			<p>	Project Tagline</p>
-			<p>
-				Data Analytics
-			</p>
+			</div>
 		</div>
 
-		<div style = "margin-top: 0;margin-bottom: 0em;margin-left: 7em; margin-right: 0em;">
-			<a href="#">
-				<button class=" w3-button w3-white w3-border w3-border-black w3-round-xxlarge" style = "font-size: 14px">Read More</button>
-			</a>
-		</div>
-	</div>
+	<% }) %>
 
-	</div>
-</div>
-
-<!-- end power of you -->
-
-<!-- start 5 senses -->
-<div id="margin">
-	<div id="border">
-	<img src="/imgs/5sense.jpg" alt="example">
-
-	<!-- <div class="fixed-bg"></div> -->
-	</div>
-</div>
-
-<div id="margin">
-	<div id="border">
-
-	<div style = "width: 300px; margin-left:-10em; margin-bottom:10em;">
-		<div class="txt" style = "text-align:center;margin-bottom:1em;">
-			5 SENSES JOURNEY
-		</div>
-
-		<div class="txt" style = "text-align:center;margin-bottom:1em;margin-right:0.5em;margin-left:1em;">
-			<p>	Exceptional Achievement</p>
-			<p>
-			Business, UX, Marketing, Software Engineering
-			</p>
-		</div>
-
-		<div style = "margin-top: 0;margin-bottom: 0em;margin-left: 7em; margin-right: 0em;">
-			<a href="#">
-				<button class=" w3-button w3-white w3-border w3-border-black w3-round-xxlarge" style = "font-size: 14px">Read More</button>
-			</a>
-		</div>
-	</div>
-
-	</div>
-</div>
-
-<!-- end 5 senses -->
 
 
 </div>
