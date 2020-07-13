@@ -56,48 +56,5 @@
   </div>
 </div>
 
-<div id="projects">
-	<div id="margin" style = "background:#f6f7f5;">
-		<div id = "border" >
-			<div class="txt" style = "font-size: 30px; text-align: center;">
-					<p class = "txt" style ="font-size: 40px">
-            <div class="sectionTitle"><%= project.jobTitle %></div>
-          </p>
-          <br>
-          <p class = "txt" style ="font-size: 30px">
-            <div class="sectionTitle">Description</div>
-          </p>
-          <p class = "txt" style ="font-size: 25px">
-            <%= project.description %>
-          </p>
-          <br>
-          <p class = "txt" style ="font-size: 30px">
-          	<div class="sectionTitle">Requriement:</div>
-
-          </p>
-          <p class = "txt" style ="font-size: 25px">
-            <%= project.jobRequriement %>
-          </p>
-          <br>
-          <!-- <p><em>Submitted By <%= project.author.username %></em></p> -->
-          <% if(currentUser && project.author.id.equals(currentUser._id)) { %>
-          	<a class="btn btn-xs btn-warning" href="/projects/<%= project._id %>/edit">Edit</a>
-          	<form id="delete-form" action="/projects/<%= project._id %>?_method=DELETE" method="POST">
-          		<button class="btn btn-xs btn-danger">Delete</button>
-          	</form>
-          <% } %>
-
-			</div>
-			<div style="text-align: center; margin-top: 2em">
-				<a href="https://forms.gle/5LUNai9ZBgHxe9yt9">
-					<button class="w3-button w3-white w3-border w3-border-black w3-round-xxlarge" style = "font-size: 20px;">Apply Now</button>
-				</a>
-			</div>
-
-		</div>
-
-	</div>
-
-</div>
 
 <%- include("../partials/footer") %>
