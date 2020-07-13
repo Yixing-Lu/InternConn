@@ -141,22 +141,21 @@ background-size: 50%;
 
     <div class="col-sm-6">
 
-        <div class="txt" style = "text-align:center; margin-bottom:1em;margin-left:0em;font-size: 3em">
+        <div class="txt" style = "text-align:center; margin-bottom:0.5em;margin-left:0em;font-size: 3em">
           <div class="companyName">
             How It Works
           </div>
 
         </div>
 
-        <div class="txt" style = "text-align:center; margin-bottom:1em;margin-right:0.5em;margin-left:0em;">
+        <div class="txt" style = "margin-bottom:1em;margin-right:0.5em;margin-left:0em;">
           <p><strong>For students</strong>:</p>
-  				<p>
-  					As a student, we expect you to form up in a team of 3-4 people and voluntarily work on valuable projects and research opportunities to gain intern experience.
+  				<p>As a student, we expect you to form up in a team of 3-4 people and voluntarily work on valuable projects and research opportunities to gain intern experience.
   				</p>
 
         </div>
 
-        <div class="txt" style = "text-align:center; margin-bottom:3em;margin-right:0.5em;margin-left:1em;margin-left:0em;">
+        <div class="txt" style = "margin-bottom:3em;margin-right:0.5em;margin-left:1em;margin-left:0em;">
           <p><strong>For companies</strong>:</p>
   				<p>As a project sponsor, we hope you can participate in weekly check-in with the team working for the project and provide mentorships and advice.</p>
         </div>
@@ -168,75 +167,44 @@ background-size: 50%;
 </div>
 
 
-<div class="container" style = "margin-bottom:4em;">
-  <div class="row">
-    <div class="col-sm-12">
 
-    <div class="txt" style = "font-size: 3em; text-align: center">
-      <div class="sectionTitle">Opportunities</div>
-    </div>
-    </div>
-  </div>
-</div>
+<div class="album py-5 bg-light">
+    <div class="container">
+    	<div class="row">
+    	  <div class="col-sm-12 mb-5">
+	    	  <div class="txt" style = "font-size: 3em; text-align: center">
+	    	    <div class="sectionTitle">Opportunities</div>
+	    	  </div>
+    	  </div>
+    	</div>
 
-
-<!-- <div id="projects" name="projects">
-	<div id=“margin”>
-		<div id="border">
-			<div class="txt" style = "font-size: 3em; text-align: center">
-				<div class="sectionTitle">Opportunities</div>
-			</div>
-		</div>
-
-	</div>
-
-</div> -->
-
-
-<% projects.forEach(function(project){ %>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6">
-        <!-- <h3>Column 1</h3> -->
-        <div class="txt" style = "text-align:center; margin-bottom:5em;margin-left:0em;">
-        <img id ="mypic" src= "<%= project.img %>" class="img-responsive" alt="Cinque Terre">
-
-        </div>
+      <div class="row">
+      	<% projects.forEach(function(project){ %>
+	        <div class="col-md-4">
+	          <div class="card mb-4 shadow-sm">
+	            <svg class="bd-placeholder-img card-img-top px-5" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail"><image width="100%" height="100%" xlink:href="<%= project.img %>" /></svg>
+	            <div class="card-body">
+	              <p class="card-text"><%= project.jobTitle %></p>
+	              <p class="card-text">@ <em><%= project.name %></em></p>
+	              <div class="d-flex justify-content-between align-items-center">
+	                <div class="btn-group">
+	                	<a href="/projects/<%= project._id %>">
+	                		<button type="button" class="btn btn-outline-dark">Read More</button>
+	                	</a>
+	                  
+	                </div>
+	                <!-- <small class="text-muted">9 mins</small> -->
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+        <% }) %>
       </div>
-
-      <div class="col-sm-6">
-          <div class="txt" style = "text-align:center; margin-bottom:1em;margin-left:0em;">
-            <div class="companyName">
-              <%= project.name %>
-            </div>
-
-          </div>
-
-          <div class="txt" style = "text-align:center; margin-bottom:1em;margin-right:0.5em;margin-left:0em;">
-            <p>
-              <%= project.jobTitle %>
-            </p>
-          </div>
-
-          <div class="txt" style = "text-align:center; margin-bottom:3em;margin-right:0.5em;margin-left:1em;margin-left:0em;">
-          <a href="/projects/<%= project._id %>">
-            <button class="w3-button w3-white w3-border w3-border-black w3-round-xxlarge" style = "font-size: 14px">Read More</button>
-          </a>
-          </div>
-
-
-      </div>
-
     </div>
   </div>
 
 
-<% }) %>
-
-
-
-
-<div class="container" style = "margin-bottom:4em;">
+<div class="container my-5" >
   <div class="row">
     <div class="col-sm-12">
 
@@ -251,18 +219,18 @@ background-size: 50%;
   <div class="row">
     <div class="col-sm-12">
 
-      <div class="txt" style = "margin-bottom:1em;margin-right:8em;margin-left:8em;">
+      <div class="txt" style = "margin-bottom:1em;margin-right:2em;margin-left:2em;">
       	<p><strong>For Students</strong>:</p>
       	<p>
       		If you want to <em>participate</em> in the internship projects, please submit your application <strong><a href="https://forms.gle/5LUNai9ZBgHxe9yt9" style="text-decoration: underline;">here</a></strong>!
       	</p>
-      	<div style="padding: 10px"></div>
-          <p><strong>For Companies</strong>:</p>
-          <p>
-          	If you are interested in <em>providing</em> a valuable summer internship project, please contact us!
-          </p>
-          <div style="padding: 10px"></div>
-          <p>
+      	<div class="py-2"></div>
+        <p><strong>For Companies</strong>:</p>
+	    <p>
+	    	If you are interested in <em>providing</em> a valuable summer internship project, please contact us!
+	    </p>
+	    <div class="py-2"></div>
+        <p>
           	<em>Email: </em> <a href="mailto:internconn.contact@gmail.com" style="text-decoration: underline;">internconn.contact@gmail.com</a>
       	</p>
       </div>
@@ -272,8 +240,7 @@ background-size: 50%;
 </div>
 
 
-<br>
-<br>
+
 
 <!-- <div>
 	<h1>Projects</h1>
