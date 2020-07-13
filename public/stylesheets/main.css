@@ -35,6 +35,7 @@ p {
 nav {
 	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.2em;
+	background-color: rgb(43, 91, 131);
 }
 
 .navbar-header a {
@@ -42,4 +43,21 @@ nav {
 	font-size: 1.2em;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-brand {
+    color: white;
+}
+
+
+element.style {
+    background-color: rgb(43, 91, 131);
+}
+
+
+footer {
+    background-color: rgb(43, 91, 131);
+}
 

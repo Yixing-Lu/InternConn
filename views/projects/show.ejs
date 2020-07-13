@@ -1,95 +1,61 @@
 <%- include("../partials/header") %>
 
+<div class="container my-5 py-5 px-5">
+  <div class="row justify-content-md-center">
+    <div class="col">
+      <img src="<%= project.img %>" class="img-thumbnail border-0">
+    </div>
+    <div class="col" style="text-align: center;">
+      <p ><%= project.name %></p>
+      <a href="<%= project.companyUrl %>">
+          <p><%= project.companyUrl %></p>
+      </a>
+      <p><%= project.description %></p>
+    </div>
+  </div>
 
 
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <hr class="my-5">
 
-<style>
-/* body{ margin:0px } */
-/* div#top{ background:url(topSliver.png) repeat-x; height:73px; font-size:36px; text-align: center; padding:20px 0px 0px 20px;  } */
+  <div>
+  	<h1 class="text-center">
+  		<%= project.jobTitle %>
+  	</h1>
+  	<div class="my-5">
+  		<h5>
+  			Description
+  		</h5>
+  		<p>
+  		  <%= project.description %>
+  		</p>
+  	</div>
+  	<div class="my-5">
+  		<h5>
+  			Requriement
+  		</h5>
+  		<p>
+  		  <%= project.jobRequriement %>
+  		</p>
+  	</div>
 
-div#projects{ min-width:900px; padding: 0px}
-div#projects > div#margin{ float:left; width:100%; }
-div#projects > div#margin > div#border{ border:white 0px solid; padding: 40px; margin-left:5em;
-    margin-right:5em; }
-
-div#middle1{ min-width:900px; padding: 20px }
-div#middle1 > div#margin{ float:left; width:50%; }
-div#middle1 > div#margin > div#border{ border:white 0px solid; padding: 40px; margin-left:200px;
-    margin-right:0px; }
-div#middle1 > div#margin > div#border > img{ width:100%; }
-
-
-/* div#bottom{ clear:left; background:#666; height:200px; } */
-
-
-.txt {
-	text-indent: 20px;
-	/*font-family:Times New Roman,Times,serif;*/
-	font-family: 'Josefin Sans', sans-serif;
-	font-size:20px;
-	/* margin-top: 0em;
-	margin-bottom: 0em;
-	margin-left: auto;
-	margin-right: auto; */
-}
+  	<div class="my-5 text-center">
+	  	<a href="https://forms.gle/5LUNai9ZBgHxe9yt9">
+	  		<button type="button" class="btn btn-primary">Apply Now</button>
+	  	</a>
+  	</div>
+  </div>
 
 
-.fixed-bg {
-background-image: url("/imgs/makeaconnection.jpg");
-min-height: 450px;
-background-attachment: fixed;
-background-position: right top;
-/* background-position: 500px -60px; */
-background-repeat: no-repeat;
-background-size: cover;
-background-size: 50%;
-
-}
-
-
-
-
-</style>
-
-
-<div id="middle1">
-<!-- start rezscore -->
-	<div id="margin">
-		<div id="border">
-
-      <!-- <div style = "width: 450px;">
-        <img src="/imgs/rezscore.png" style = "width: 450px;" alt="example">
-      </div> -->
-      <img src="<%= project.img %>" style = "width: 200px;" alt="example">
-
-		<!-- <div class="fixed-bg"></div> -->
-		</div>
-	</div>
-
-	<div id="margin">
-		<div id = "border">
-		<div style = "width: 300px; margin-left:-10em; margin-bottom:10em;">
-			<div class="txt" style = "text-align:center; text-align:center;margin-top:1em;margin-bottom:1em;">
-				<%= project.name %>
-			</div>
-
-			<div class="txt" style = "text-align:center; margin-bottom:1em;margin-right:0.5em;margin-left:1em;">
-        <a href="<%= project.companyUrl %>">
-            <p><%= project.companyUrl %></p>
-        </a>
-			</div>
-
-
-		</div>
-
-		</div>
-	</div>
- <!-- end rezscore -->
-
-
-
+  <div style="text-align: center;">
+	  <% if(currentUser && project.author.id.equals(currentUser._id)) { %>
+	  	<a class="btn btn-xs btn-warning" href="/projects/<%= project._id %>/edit">Edit</a>
+	  	<form id="delete-form" action="/projects/<%= project._id %>?_method=DELETE" method="POST">
+	  		<button class="btn btn-xs btn-danger">Delete</button>
+	  	</form>
+	  <% } %>
+  </div>
 </div>
+<<<<<<< HEAD
 
 
 <div id="projects">
@@ -138,4 +104,6 @@ background-size: 50%;
 
 
 
+=======
+>>>>>>> 4d2d3bf95cd1825faeed68c02f33a19c04bb1507
 <%- include("../partials/footer") %>
