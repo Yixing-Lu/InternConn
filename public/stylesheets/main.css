@@ -14,17 +14,8 @@
 	display: inline;
 }
 
-.navbar{
-	margin-bottom: 0px;
-}
-
 section:nth-child(2n + 1) {
 	background: #f7f7f7;
-}
-
-footer {
-  text-align: center;
-  padding: 3px;
 }
 
 .sectionTitle {
