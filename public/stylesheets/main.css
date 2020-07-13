@@ -20,6 +20,8 @@ section:nth-child(2n + 1) {
 
 .sectionTitle {
 	font-family: 'Josefin Sans', sans-serif;
+	font-size: 3em; 
+	text-align: center;
 	
 }
 
