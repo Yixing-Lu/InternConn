@@ -28,26 +28,26 @@ footer {
 }
 
 .sectionTitle {
-	font-family: 'Baloo Da 2', cursive;
+	font-family: 'Josefin Sans', sans-serif;
 	
 }
 
 .companyName {
-	font-family: 'Baloo Da 2', cursive;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 
 p {
-	font-family: 'Montserrat', cursive;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 nav {
-	font-family: 'Baloo Da 2', cursive;
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 1.5em;
 }
 
 .navbar-header a {
-	font-family: 'Baloo Da 2', cursive;
+	font-family: 'Teko', sans-serif;
 	font-size: 1.2em;
 }
 
