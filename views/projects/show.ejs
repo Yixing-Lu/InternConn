@@ -10,8 +10,8 @@
 
 div#projects{ min-width:900px; padding: 0px}
 div#projects > div#margin{ float:left; width:100%; }
-div#projects > div#margin > div#border{ border:white 0px solid; padding: 40px; margin-left:0;
-    margin-right:auto; }
+div#projects > div#margin > div#border{ border:white 0px solid; padding: 40px; margin-left:5em;
+    margin-right:5em; }
 
 div#middle1{ min-width:900px; padding: 20px }
 div#middle1 > div#margin{ float:left; width:50%; }
@@ -25,7 +25,8 @@ div#middle1 > div#margin > div#border > img{ width:100%; }
 
 .txt {
 	text-indent: 20px;
-	font-family:Times New Roman,Times,serif;
+	/*font-family:Times New Roman,Times,serif;*/
+	font-family: 'Montserrat', cursive;
 	font-size:20px;
 	/* margin-top: 0em;
 	margin-bottom: 0em;
@@ -93,21 +94,22 @@ background-size: 50%;
 
 <div id="projects">
 	<div id="margin" style = "background:#f6f7f5;">
-		<div id = "border">
+		<div id = "border" >
 			<div class="txt" style = "font-size: 30px; text-align: center;">
 					<p class = "txt" style ="font-size: 40px">
-            <%= project.jobTitle %>
+            <div class="sectionTitle"><%= project.jobTitle %></div>
           </p>
           <br>
           <p class = "txt" style ="font-size: 30px">
-            Description:
+            <div class="sectionTitle">Description</div>
           </p>
           <p class = "txt" style ="font-size: 25px">
             <%= project.description %>
           </p>
           <br>
           <p class = "txt" style ="font-size: 30px">
-            Requriement:
+          	<div class="sectionTitle">Requriement:</div>
+            
           </p>
           <p class = "txt" style ="font-size: 25px">
             <%= project.jobRequriement %>

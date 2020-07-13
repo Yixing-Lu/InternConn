@@ -15,7 +15,7 @@ div#middle > div#margin > div#border{ border:white 0px solid; padding: 40px; mar
 div#middle > div#margin > div#border > img{ width:100%; }
 
 
-div#projects{ min-width:900px; padding: px}
+div#projects{ min-width:900px; padding: 0px}
 div#projects > div#margin{ float:left; width:100%; }
 div#projects > div#margin > div#border{ border:white 0px solid; padding: 40px; margin-left:0;
     margin-right:auto; }
@@ -32,7 +32,8 @@ div#middle1 > div#margin > div#border> img{ width:100%; }
 
 .txt {
 	text-indent: 20px;
-	font-family:Times New Roman,Times,serif;
+	/*font-family:Times New Roman,Times,serif;*/
+	font-family: 'Montserrat', cursive;
 	font-size:20px;
 	/* margin-top: 0em;
 	margin-bottom: 0em;
@@ -42,7 +43,7 @@ div#middle1 > div#margin > div#border> img{ width:100%; }
 
 
 .fixed-bg {
-background-image: url("/imgs/makeaconnection.jpg");
+background-image: url("logonew.png");/*url("/imgs/makeaconnection.jpg");*/
 min-height: 450px;
 background-attachment: fixed;
 background-position: right top;
@@ -63,20 +64,22 @@ background-size: 50%;
 	<div id = "margin">
     <div id = "border">
       <!-- <img src="/imgs/aboutUS.jpg" alt="example"> -->
-					<div style = "width: 450px;">
+					<div style = "width: 500px;">
 
-						<div class="txt" style = "text-align:center;margin-bottom:2em;">
-							WHAT WE DO
+						<div class="txt" style = "text-align:center;margin-bottom:0.5em; font-size: 3em">
+							<div class="sectionTitle">WHAT WE DO</div>
 						</div>
 
-						<div class="txt" style = "margin-bottom:2em;margin-left:2em;margin-right:auto;">
+						<div class="txt" style = "margin-bottom:1em;margin-left:2em;margin-right:auto;">
 							<p>As the COVID-19 pandemic has severely disrupted the economy and University research programs, thousands of college students, including us,
 							lost amazing opportunities.</p>
 						</div>
 
-						<div class="txt" style = "margin-left:auto;margin-left:2em;margin-right:auto;margin-bottom:2em;">
+						<div class="txt" style = "margin-left:auto;margin-left:2em;margin-right:auto;margin-bottom:1em;">
+							<p>
 							We want to help out our fellow students by creating this platform InternConn to connect impacted students with ongoing,
 							remote research or internship opportunities.
+						</p>
 						</div>
 
 					</div>
@@ -102,21 +105,21 @@ background-size: 50%;
 
 	<div id="margin">
 		<div id="border">
-		<div style = "width: 400px;">
-			<div class="txt" style = "text-align:center;margin-bottom:2em;">
-				HOW IT WORKS
+		<div style = "width: 500px;">
+			<div class="txt" style = "text-align:center;margin-bottom:0.5em; font-size: 3em">
+				<div class="sectionTitle">HOW IT WORKS</div>
 			</div>
 
 			<div class="txt" style = "margin-bottom:1em;margin-right:0.5em;margin-left:2em;">
-				<p>For students:</p>
+				<p><strong>For students</strong>:</p>
 				<p>
 					As a student, we expect you to form up in a team of 3-4 people and voluntarily work on valuable projects and research opportunities to gain intern experience.
 				</p>
 
 			</div>
 
-			<div class="txt" style = "margin-left:auto;margin-right:0.5em;margin-left:2em;margin-bottom:2em;">
-				<p>For companies:</p>
+			<div class="txt" style = "margin-left:auto;margin-right:0.5em;margin-left:2em;margin-bottom:1em;">
+				<p><strong>For companies</strong>:</p>
 				<p>As a project sponsor, we hope you can participate in weekly check-in with the team working for the project and provide mentorships and advice.</p>
 			</div>
 
@@ -131,8 +134,8 @@ background-size: 50%;
 <div id="projects" name="projects">
 	<div id=“margin”>
 		<div id="border">
-			<div class="txt" style = "font-size: 30px; text-align: center">
-					OPPORTUNITIES
+			<div class="txt" style = "font-size: 3em; text-align: center">
+				<div class="sectionTitle">OPPORTUNITIES</div>
 			</div>
 			<!-- <div style="text-align: center; margin-top: 2em">
 				<a href="#">
@@ -162,7 +165,9 @@ background-size: 50%;
 
 			<div style = "width: 300px; margin-left:-10em; margin-bottom:10em;">
 				<div class="txt" style = "text-align:center; text-align:center;margin-bottom:1em;">
-					<%= project.name %>
+					<div class="companyName">
+						<%= project.name %>
+					</div>
 				</div>
 
 				<div class="txt" style = "text-align:center; margin-bottom:1em;margin-right:0.5em;margin-left:1em;">
@@ -185,6 +190,34 @@ background-size: 50%;
 
 
 
+</div>
+
+
+<div id="projects" name="projects">
+	<div id=“margin”>
+		<div id="border">
+			<div class="txt" style = "font-size: 3em; text-align: center; padding: 1em">
+				<div class="sectionTitle">Contact Us</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+<div class="txt" style = "margin-bottom:1em;margin-right:8em;margin-left:8em;">
+	<p><strong>For Students</strong>:</p> 
+	<p>
+		If you want to <em>participate</em> in the internship projects, please submit your application <strong><a href="https://forms.gle/5LUNai9ZBgHxe9yt9" style="text-decoration: underline;">here</a></strong>!
+	</p>
+	<div style="padding: 10px"></div>
+    <p><strong>For Companies</strong>:</p>
+    <p>
+    	If you are interested in <em>providing</em> a valuable summer internship project, please contact us! 
+    </p>
+    <div style="padding: 10px"></div>
+    <p>
+    	<em>Email: </em> <a href="mailto:internconn.contact@gmail.com" style="text-decoration: underline;">internconn.contact@gmail.com</a>
+	</p>
 </div>
 
 
