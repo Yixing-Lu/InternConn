@@ -14,40 +14,31 @@
 	display: inline;
 }
 
-.navbar{
-	margin-bottom: 0px;
-}
-
 section:nth-child(2n + 1) {
 	background: #f7f7f7;
 }
 
-footer {
-  text-align: center;
-  padding: 3px;
-}
-
 .sectionTitle {
-	font-family: 'Baloo Da 2', cursive;
+	font-family: 'Josefin Sans', sans-serif;
 	
 }
 
 .companyName {
-	font-family: 'Baloo Da 2', cursive;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 
 p {
-	font-family: 'Montserrat', cursive;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 nav {
-	font-family: 'Baloo Da 2', cursive;
-	font-size: 1.5em;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.2em;
 }
 
 .navbar-header a {
-	font-family: 'Baloo Da 2', cursive;
+	font-family: 'Teko', sans-serif;
 	font-size: 1.2em;
 }
 
