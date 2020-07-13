@@ -9,8 +9,8 @@ router.get("/",function(req,res){
 		if (err) {
 			console.log(err)
 		} else {
-			res.render("../views/landing", {projects:allProjects});
-			// res.render("projects/index", {projects:allProjects});
+			// res.render("../views/landing", {projects:allProjects});
+			res.render("projects/index", {projects:allProjects});
 		}
 	})
 });

@@ -166,15 +166,23 @@ background-size: 50%;
 
 
 
+<!-- Projects -->
 <div class="album py-5 bg-light">
     <div class="container">
     	<div class="row">
-    	  <div class="col-sm-12 mb-5">
+    	  <div class="col-sm-12">
 	    	  <div class="txt" style = "font-size: 3em; text-align: center">
 	    	    <div class="sectionTitle">Opportunities</div>
 	    	  </div>
     	  </div>
     	</div>
+      <div class="text-center mt-2 mb-5">
+        <a href="/projects">
+          <button type="button" class="btn btn-outline-success rounded-pill">View All Projects</button>
+        </a>
+      </div>
+      
+      
 
       <div class="row">
       	<% projects.forEach(function(project){ %>
@@ -187,7 +195,7 @@ background-size: 50%;
 	              <div class="d-flex justify-content-between align-items-center">
 	                <div class="btn-group">
 	                	<a href="/projects/<%= project._id %>">
-	                		<button type="button" class="btn btn-outline-dark">Read More</button>
+	                		<button type="button" class="btn btn-outline-primary">Read More</button>
 	                	</a>
 	                  
 	                </div>
@@ -199,13 +207,13 @@ background-size: 50%;
         <% }) %>
       </div>
     </div>
-  </div>
+</div>
 
 
+<!-- Contact -->
 <div class="container my-5" >
   <div class="row">
     <div class="col-sm-12">
-
     <div class="txt" style = "font-size: 3em; text-align: center">
       <div class="sectionTitle">Contact Us</div>
     </div>
