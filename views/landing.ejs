@@ -1,122 +1,19 @@
 <%- include("./partials/header") %>
 
-
-
-<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
-
-
-<style>
-
-
-
-/* body{ margin:0px } */
-/* div#top{ background:url(topSliver.png) repeat-x; height:73px; font-size:36px; text-align: center; padding:20px 0px 0px 20px;  } */
-div#middle{ min-width:900px; padding: 20px}
-div#middle > div#margin{ float:left; width:50%; }
-div#middle > div#margin > div#border{ border:white 0px solid; padding: 40px; margin-left:0px;
-    margin-right:auto; }
-div#middle > div#margin > div#border > img{ width:100%; }
-
-
-div#projects{ min-width:900px; padding: 0px}
-div#projects > div#margin{ float:left; width:100%; }
-div#projects > div#margin > div#border{ border:white 0px solid; padding: 40px; margin-left:0;
-    margin-right:auto; }
-
-div#middle1{ min-width:900px; padding: 20px }
-div#middle1 > div#margin{ float:left; width:50%; }
-div#middle1 > div#margin > div#border{ border:white 0px solid; padding: 40px; margin-left:150px;
-    margin-right:0px; }
-div#middle1 > div#margin > div#border> img{ width:100%; }
-
-
-/* div#bottom{ clear:left; background:#666; height:200px; } */
-
-
-.txt {
-	text-indent: 20px;
-	/*font-family:Times New Roman,Times,serif;*/
-	font-family: 'Josefin Sans', sans-serif;
-	font-size:20px;
-	/* margin-top: 0em;
-	margin-bottom: 0em;
-	margin-left: auto;
-	margin-right: auto; */
-}
-
-
-.fixed-bg {
-background-image: url("logonew.png");/*url("/imgs/makeaconnection.jpg");*/
-min-height: 450px;
-background-attachment: fixed;
-background-position: right top;
-/* background-position: 500px -60px; */
-background-repeat: no-repeat;
-background-size: cover;
-background-size: 50%;
-
-}
-
-#mypic {
-  width: 70%;
-  height: auto;
-  margin-right : auto;
-  margin-left : auto;
-  min-width : 200px;
-  max-width : 300px;
-}
-
-
-
-</style>
-
-<div id="middle">
-
-
-
-</div>
-
-
-<div class="container" style = "margin-top:6em;margin-bottom:4em;">
-  <div class="row">
+<!-- What We Do -->
+<div class="container pt-5 mt-5">
+  <div class="row justify-content-md-center">
     <div class="col-sm-6">
-
-      <div>
-        <div class="sectionTitle">What We Do</div>
-      </div>
-
-      <div class="txt" style = "margin-bottom:1em;margin-left:2em;margin-right:auto;">
+      <div class="sectionTitle mt-5 mb-3">What We Do</div>
         <p>As the COVID-19 pandemic has severely disrupted the economy and University research programs, thousands of college students, including us,
         lost amazing opportunities.</p>
-      </div>
-
-      <div class="txt" style = "margin-left:auto;margin-left:2em;margin-right:auto;margin-bottom:1em;">
-        <p>
-        We want to help out our fellow students by creating this platform InternConn to connect impacted students with ongoing,
-        remote research or internship opportunities.
-      </p>
-      </div>
-
-
+        <p>We want to help out our fellow students by creating this platform InternConn to connect impacted students with ongoing,
+        remote research or internship opportunities.</p>
     </div>
-
     <div class="col-sm-6">
-<!--
-      <div class="txt" style = "text-align:center; margin-bottom:5em;margin-left:0em;">
-      <img id ="mypic" src= "/imgs/howitWorks.jpg" class="img-responsive" style="min-width : 300px;
-      max-width : 700px;" alt="Cinque Terre">
-      </div> -->
-
-
-      <div style = "resize: vertical; margin-left:2em;">
-  				<div class="fixed-bg"></div>
-  		</div>
-
+      <img src="croplogo2.png" class="img-thumbnail border-0">
     </div>
-
+    
   </div>
 </div>
 
@@ -124,13 +21,14 @@ background-size: 50%;
 <!-- How it works -->
 <div class="container py-5">
   <div class="row justify-content-md-center">
-    <div class="col-sm-6">
+    <div class="col-sm-6 mb-3">
       <img src="/imgs/howitWorks.jpg" class="img-thumbnail border-0">
     </div>
     <div class="col-sm-6">
-      <div class="sectionTitle my-3">How It Works</div>
+      <div class="sectionTitle mb-3">How It Works</div>
         <p><strong>For Students</strong>:<br>
         As a student, we expect you to form up in a team of 3-4 people and voluntarily work on valuable projects and research opportunities to gain intern experience.</p>
+        <br>
         <p><strong>For Companies</strong>:<br>
         As a project sponsor, we hope you can participate in weekly check-in with the team working for the project and provide mentorships and advice.</p>
     </div>
@@ -149,9 +47,9 @@ background-size: 50%;
     	  </div>
     	</div>
       <div class="text-center mt-2 mb-5">
-        <a href="/projects">
+        <!-- <a href="/projects">
           <button type="button" class="btn btn-outline-success rounded-pill">View All Projects</button>
-        </a>
+        </a> -->
       </div>
       
       

@@ -6,7 +6,7 @@
       <img src="<%= project.img %>" class="img-thumbnail border-0">
     </div>
     <div class="col" style="text-align: center;">
-      <p ><%= project.name %></p>
+      <div class="subSectionTitle"><%= project.name %></div>
       <a href="<%= project.companyUrl %>">
           <p><%= project.companyUrl %></p>
       </a>
@@ -18,21 +18,17 @@
   <hr class="my-5">
 
   <div>
-  	<h1 class="text-center">
-  		<%= project.jobTitle %>
-  	</h1>
+    <div class="sectionTitle">
+      <%= project.jobTitle %>
+    </div>
   	<div class="my-5">
-  		<h5>
-  			Description
-  		</h5>
+      <div class="subSectionTitle">Description</div>
   		<p>
   		  <%= project.description %>
   		</p>
   	</div>
   	<div class="my-5">
-  		<h5>
-  			Requriement
-  		</h5>
+      <div class="subSectionTitle">Requriement</div>
   		<p>
   		  <%= project.jobRequriement %>
   		</p>
