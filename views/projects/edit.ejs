@@ -1,7 +1,6 @@
 <%- include("../partials/header") %>
-<div class="container">
+<div class="container mt-5 pt-5">
 	<div class="row">
-		<h1 style="text-align:center">Edit <%= project.name %></h1>
 		<div style="width:30%; margin: 25px auto;">
 			<form action="/projects/<%= project._id %>?_method=PUT" method="POST">
 
